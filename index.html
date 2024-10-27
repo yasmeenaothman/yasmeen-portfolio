@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmeen Othman</title>
+    <!-- Font families for headings and body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="logo">YASMEEN</div>
+            <nav>
+                <!-- here place the humbergur icon hidden and visible with mobile -->
+                <button class="hamburger" aria-label="Open Menu" onclick="toggleMenu()">☰</button>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="hero-section">
+            <p class="home-subtitle">Flutter Developer</p>
+            <h1 class="hero-title">Hello, my name is Yasmeen Abu Shaar
+                <p class="description hero-description ">She is a creative developer in innovating professional ideas,
+                    she works independently and in team
+                    environments, she is a powerful force in the workplace.</p>
+                <div class="btns-container">
+                    <button class="btn btn-yellow">
+                        <a href="https://mostaql.com/u/yasmeenabushaar/portfolio" target="_blank"
+                            rel="noopener noreferrer">Projects</a>
+                    </button>
+                    <button class="btn">
+                        <a href="https://www.linkedin.com/in/yasmeenabushaar/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
+                    </button>
+
+                </div>
+        </section>
+
+        <section id="about-me" class="about-section">
+            <div>
+                <img src="./images/img-aboutme.svg" alt="My image in the About Me section" loading="lazy">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">About me</h2>
+                <p class="about-description description">Yasmeen Abu Shaar is a recent graduate with a Bachelor's Degree
+                    in Computer System Engineering
+                    from Al Azhar University.
+                    She specializes in the development of mobile apps by Flutter and Android native, she is passionate
+                    about building superstitious applications that satisfy the client, as that's her art.
+                    She is familiar with most of the concepts in these fields, she provides the highest quality,
+                    supporting
+                    different languages, fully responsive and easily maintainable apps such as the e-commerce app,
+                    yallah njoom app with many features, and so on.</p>
+                <button id="resume" class="btn btn-yellow">
+                    <!-- "https://drive.google.com/uc?export=download&id=your-file-id"  
+                     to force hr to download my resume note the download attr with the link so omit it from the link if you use that -->
+                    <a href="https://drive.google.com/file/d/1kOxAfaBrr0HHws3lr9HsLezjcx7WfIyO/view?usp=sharing"
+                        download aria-label="Download My Resume">Resume</a>
+                </button>
+            </div>
+        </section>
+
+        <article id="projects" class="projects-section">
+            <h2 class="section-title">Projects</h2>
+            <section class="project-container">
+                <div class="project-description">
+                    <h3 class="project-title">Yalla Njoom APP</h3>
+                    <p class="description project-details">Developed an app for children using Flutter to teach Arabic
+                        letters and numbers
+                        and some operations in an attractive way.</p>
+                    <button class="btn view-btn">
+                        <a href="https://tinyurl.com/yallanjoom" target="_blank" rel="noopener noreferrer">View
+                            Project</a>
+                    </button>
+                </div>
+                <img src="./images/proj1.png" alt="Image of the project" loading="lazy">
+            </section>
+
+            <section class="project-container row-reverse">
+                <div class="project-description">
+                    <h3 class="project-title">E-Commerce App </h3>
+                    <p class="description project-details"> Used by the admin and user use, the user can create an
+                        account for it through email, Facebook or Google to be able to use it for browsing
+                        fruits and vegetables and add it to the cart in the quantities he wants.</p>
+                    <button class="btn view-btn">
+                        <a href="https://tinyurl.com/e-coApp" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </button>
+                </div>
+                <img src="./images/proj2.png" alt="Image of the project" loading="lazy">
+            </section>
+
+            <section class="project-container">
+                <div class="project-description">
+                    <h3 class="project-title"> Athkar App</h3>
+                    <p class="description project-details">The user can read various athkar daily and share them with
+                        his
+                        friends on different media also zoom the line as he wants and choose the right
+                        color as he wants and so on. </p>
+
+                    <button class="btn view-btn">
+                        <a href="https://tinyurl.com/athkar-app" target="_blank" rel="noopener noreferrer">View
+                            Project</a>
+                    </button>
+                </div>
+                <img src="./images/proj3.png" alt="Image of the project" loading="lazy">
+            </section>
+
+        </article>
+
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Contact</h2>
+            <form action="#" method="post" class="contact-form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user_name" required>
+                </div>
+                <div>
+                    <label for="email">Email<br></label>
+                    <input type="email" id="email" name="user_email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <input id = "submit"type="submit" value="Send" class="btn btn-yellow">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.instagram.com/yasmeen_abu_shaar/" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram"><img src="./icons/insta.svg" alt="Instagram Logo"></a>
+            <a href="https://www.linkedin.com/in/yasmeenabushaar/" target="_blank" rel="noopener noreferrer"><img
+                    src="./icons/linkedin.svg" alt="LinkedIn Logo"></a>
+            <a href="mailto:anayasmeen380@gmail.com" aria-label="Gmail"><img src="./icons/gmail.svg"
+                    alt="Gmail  Logo"></a>
+        </div>
+        <p>&copy; Yasmeen Abu Shaar 2024</p>
+    </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
