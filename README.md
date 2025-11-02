@@ -51,7 +51,7 @@ To run this project locally, ensure you have a modern web browser.
 
 3. Open index.html in your web browser to view the website.
 
-## Contactv
+## Contact
 
 Feel free to reach out via the contact form on the website or directly at my email: [anayasmeen380@gmail.com](mailto:anayasmeen380@gmail.com).
 
@@ -65,7 +65,3 @@ Feel free to reach out via the contact form on the website or directly at my ema
 ## License
 
 This project is licensed under the terms of the **All Rights Reserved**. No part of this project may be reproduced or used without permission.
-
-```
-
-```
